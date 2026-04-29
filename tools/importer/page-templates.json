@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": ["https://www.kingston.com/en"],
+      "description": "Kingston homepage with hero banner, product categories, featured products, and promotional content",
+      "blocks": [
+        {
+          "name": "carousel-hero",
+          "instances": ["section.s-carousel"]
+        },
+        {
+          "name": "columns-search",
+          "instances": [".s-searchConfigurator__body"]
+        },
+        {
+          "name": "cards-banner",
+          "instances": ["section.s-banners .l-gridFlex"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Carousel",
+          "selector": "section.s-carousel",
+          "style": null,
+          "blocks": ["carousel-hero"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Product Finder",
+          "selector": "section.s-searchConfigurator",
+          "style": "stone",
+          "blocks": ["columns-search"],
+          "defaultContent": [".c-heading h2", ".c-heading p"]
+        },
+        {
+          "id": "section-3",
+          "name": "Banner Cards",
+          "selector": "section.s-banners",
+          "style": null,
+          "blocks": ["cards-banner"],
+          "defaultContent": []
+        }
+      ]
+    },
+    {
+      "name": "product-page",
+      "urls": ["https://www.kingston.com/en/ssd/dual-portable-solid-state-drive-spsd"],
+      "description": "Kingston product detail page with hero image/specs, full description, specifications table, key features with alternating columns, and related articles",
+      "blocks": [
+        {
+          "name": "hero-product",
+          "instances": [".s-productHeader", ".s-hero"]
+        },
+        {
+          "name": "table",
+          "instances": [".s-specifications table", ".c-specs"]
+        },
+        {
+          "name": "columns",
+          "instances": [".s-keyFeatures .c-feature"]
+        },
+        {
+          "name": "cards-banner",
+          "instances": [".s-relatedArticles .l-gridFlex", ".s-relatedProducts"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Product Hero",
+          "selector": [".s-productHeader", ".s-hero"],
+          "style": null,
+          "blocks": ["hero-product"],
+          "defaultContent": ["h1", ".s-productHeader__subtitle"]
+        },
+        {
+          "id": "section-2",
+          "name": "Description & Specifications",
+          "selector": [".s-productDetails", ".s-specifications"],
+          "style": null,
+          "blocks": ["table"],
+          "defaultContent": ["h2", "p"]
+        },
+        {
+          "id": "section-3",
+          "name": "Key Features",
+          "selector": [".s-keyFeatures", ".s-features"],
+          "style": "dark",
+          "blocks": ["columns"],
+          "defaultContent": ["h2"]
+        },
+        {
+          "id": "section-4",
+          "name": "Related Articles",
+          "selector": [".s-relatedArticles", ".s-relatedProducts"],
+          "style": null,
+          "blocks": ["cards-banner"],
+          "defaultContent": ["h2"]
+        }
+      ]
+    }
+  ]
+}

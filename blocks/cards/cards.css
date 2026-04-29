@@ -8,12 +8,29 @@
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
+  border: 1px solid var(--border-color, #dadada);
+  border-radius: 8px;
   background-color: var(--background-color);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base, 0.2s ease);
+}
+
+.cards > ul > li:hover {
+  box-shadow: var(--shadow-md, 0 4px 12px rgb(0 0 0 / 10%));
 }
 
 .cards .cards-card-body {
   margin: 16px;
+}
+
+.cards .cards-card-body a {
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.cards .cards-card-body a:hover {
+  color: var(--accent-color, #e50000);
 }
 
 .cards .cards-card-image {
@@ -22,6 +39,12 @@
 
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 1;
   object-fit: cover;
+}
+
+@media (width >= 900px) {
+  .cards > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

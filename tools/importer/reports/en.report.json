@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.kingston.com/en",
+  "path": "en",
+  "timestamp": "2026-04-29T22:42:12.239Z",
+  "title": "Kingston Technology - Largest Independent Manufacturer of Memory Products - Kingston Technology",
+  "template": "homepage",
+  "blocks": [
+    "carousel-hero",
+    "columns-search",
+    "cards-banner"
+  ]
+}

@@ -9,6 +9,15 @@
 
 .columns > div > div {
   order: 1;
+  padding: var(--spacing-m, 24px);
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm, 0 1px 3px rgb(0 0 0 / 8%));
+}
+
+.columns > div > div h3 {
+  margin-top: 0;
+  font-size: var(--heading-font-size-m);
 }
 
 .columns > div > .columns-img-col {
@@ -21,7 +30,7 @@
 
 @media (width >= 900px) {
   .columns > div {
-    align-items: center;
+    align-items: stretch;
     flex-direction: unset;
     gap: 24px;
   }

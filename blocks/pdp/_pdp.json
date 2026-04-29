@@ -1,0 +1,83 @@
+{
+  "definitions": [
+    {
+      "title": "Pdp",
+      "id": "pdp",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Pdp",
+              "model": "pdp"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "pdp",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Product Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Image Alt Text",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "title",
+          "label": "Product Title",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "subtitle",
+          "label": "Subtitle / Tagline",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "partNumber",
+          "label": "Part Number",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "capacities",
+          "label": "Capacities (comma-separated)",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "name": "features",
+          "value": "",
+          "label": "Key Features List",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "cta",
+          "label": "CTA Link",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
