@@ -346,53 +346,11 @@
         "multi": false
       },
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Image Alt Text",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "label": "Product Title",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "subtitle",
-        "label": "Subtitle / Tagline",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "partNumber",
-        "label": "Part Number",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "capacities",
-        "label": "Capacities (comma-separated)",
-        "value": ""
-      },
-      {
         "component": "richtext",
-        "name": "features",
+        "name": "text",
         "value": "",
-        "label": "Key Features List",
+        "label": "Product Details",
         "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "valueType": "string",
-        "name": "cta",
-        "label": "CTA Link",
-        "value": ""
       }
     ]
   },

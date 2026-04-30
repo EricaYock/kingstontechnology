@@ -1,4 +1,8 @@
 {
   "type": "xwalk",
-  "contentHostUrl": "author-p178211-e1869897.adobeaemcloud.com"
+  "contentHostUrl": "author-p178211-e1869897.adobeaemcloud.com",
+  "aemSitePath": "/content/kingstontechnology",
+  "aemAssetsFolderPath": "/content/dam/kingstontechnology",
+  "aemSiteName": "kingstontechnology",
+  "aemSiteTitle": "Kingston Demo 2"
 }
