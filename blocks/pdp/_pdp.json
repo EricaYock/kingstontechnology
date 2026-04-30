@@ -24,14 +24,21 @@
           "component": "reference",
           "valueType": "string",
           "name": "image",
-          "label": "Product Image",
+          "label": "Image",
           "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Alt",
+          "value": ""
         },
         {
           "component": "richtext",
           "name": "text",
           "value": "",
-          "label": "Product Details",
+          "label": "Text",
           "valueType": "string"
         }
       ]
