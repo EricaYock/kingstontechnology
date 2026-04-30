@@ -299,6 +299,11 @@ main > .section:first-of-type {
   }
 }
 
+/* center default content that precedes a block */
+main > .section > .default-content-wrapper:has(+ .columns-wrapper) {
+  text-align: center;
+}
+
 /* section metadata */
 main .section.light,
 main .section.highlight {

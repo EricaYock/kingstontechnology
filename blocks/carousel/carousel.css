@@ -84,6 +84,12 @@
   text-decoration: none;
   font-weight: 500;
   font-size: var(--body-font-size-s);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: inline;
+  white-space: normal;
 }
 
 .carousel .carousel-slide-indicators {
